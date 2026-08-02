@@ -25,7 +25,7 @@ body {
 a { color: inherit; }
 
 .eyebrow {
-  font-size: 11px;
+  font-size: 16px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-muted);
