@@ -1,0 +1,135 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" fill="#1E293B">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2F6"/>
+    </linearGradient>
+    <filter id="panelShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect x="16" y="16" width="1168" height="668" rx="28" fill="url(#bgGrad)" stroke="#E2E8F0" stroke-width="2"/>
+
+  <!-- ===================== LEFT PANEL: DIGEST ===================== -->
+  <rect x="56" y="90" width="520" height="520" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#panelShadow)"/>
+  <path d="M56,106 a16,16 0 0 1 16,-16 h488 a16,16 0 0 1 16,16 v24 h-520 z" fill="#F8FAFC"/>
+  <circle cx="76" cy="118" r="5" fill="#F4B4B4"/>
+  <circle cx="94" cy="118" r="5" fill="#F7D08A"/>
+  <circle cx="112" cy="118" r="5" fill="#A8DDB0"/>
+  <rect x="150" y="106" width="380" height="24" rx="12" fill="#F1F5F9"/>
+  <text x="340" y="122" font-size="11" fill="#94A3B8" text-anchor="middle">job-search-agent.app/digest</text>
+
+  <text x="80" y="158" font-size="16" font-weight="700" fill="#0F172A">Job search digest</text>
+  <text x="80" y="177" font-size="12" fill="#64748B">10 roles found today</text>
+  <line x1="80" y1="192" x2="552" y2="192" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Entry 1 -->
+  <circle cx="104" cy="226" r="16" fill="#378ADD"/>
+  <text x="104" y="230" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">MH</text>
+  <text x="136" y="222" font-size="13" font-weight="700" fill="#0F172A">Senior Manager, Content Strategy &amp; KM</text>
+  <rect x="486" y="212" width="56" height="22" rx="11" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+  <text x="514" y="227" font-size="11" font-weight="700" fill="#0C447C" text-anchor="middle">8/10</text>
+  <text x="136" y="242" font-size="11" fill="#64748B">Meridian Health · Remote</text>
+  <text x="136" y="262" font-size="11" fill="#94A3B8">Direct match for content governance and KM ownership</text>
+  <text x="136" y="300" font-size="11" fill="#185FA5">View posting →</text>
+  <line x1="80" y1="322" x2="552" y2="322" stroke="#F1F5F9" stroke-width="1"/>
+
+  <!-- Entry 2 -->
+  <circle cx="104" cy="352" r="16" fill="#1D9E75"/>
+  <text x="104" y="356" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">AD</text>
+  <text x="136" y="348" font-size="13" font-weight="700" fill="#0F172A">Knowledge Operations Lead</text>
+  <rect x="486" y="338" width="56" height="22" rx="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="514" y="353" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">9/10</text>
+  <text x="136" y="368" font-size="11" fill="#64748B">Arcadia Digital · Philadelphia, PA</text>
+  <text x="136" y="388" font-size="11" fill="#94A3B8">Player-coach fit with AI enablement and content ops</text>
+  <text x="136" y="426" font-size="11" fill="#185FA5">View posting →</text>
+  <line x1="80" y1="448" x2="552" y2="448" stroke="#F1F5F9" stroke-width="1"/>
+
+  <!-- Entry 3 -->
+  <circle cx="104" cy="478" r="16" fill="#7F77DD"/>
+  <text x="104" y="482" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">BG</text>
+  <text x="136" y="474" font-size="13" font-weight="700" fill="#0F172A">Content Governance &amp; AI Enablement Mgr</text>
+  <rect x="486" y="464" width="56" height="22" rx="11" fill="#E6F1FB" stroke="#185FA5" stroke-width="1"/>
+  <text x="514" y="479" font-size="11" font-weight="700" fill="#0C447C" text-anchor="middle">8/10</text>
+  <text x="136" y="494" font-size="11" fill="#64748B">Bridgeway Group · Remote</text>
+  <text x="136" y="514" font-size="11" fill="#94A3B8">Strong overlap in information architecture and IA work</text>
+  <text x="136" y="552" font-size="11" fill="#185FA5">View posting →</text>
+
+  <!-- ===================== CONNECTOR ===================== -->
+  <line x1="578" y1="350" x2="596" y2="350" stroke="#94A3B8" stroke-width="2"/>
+  <circle cx="600" cy="350" r="24" fill="#E6F1FB" stroke="#185FA5" stroke-width="1.5"/>
+  <path d="M592,342 h13 v-5 l11,13 l-11,13 v-5 h-13 z" fill="#185FA5"/>
+  <line x1="604" y1="350" x2="622" y2="350" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- ===================== RIGHT PANEL: TRACKER ===================== -->
+  <rect x="624" y="90" width="520" height="520" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#panelShadow)"/>
+  <path d="M624,106 a16,16 0 0 1 16,-16 h488 a16,16 0 0 1 16,16 v24 h-520 z" fill="#F8FAFC"/>
+  <circle cx="644" cy="118" r="5" fill="#F4B4B4"/>
+  <circle cx="662" cy="118" r="5" fill="#F7D08A"/>
+  <circle cx="680" cy="118" r="5" fill="#A8DDB0"/>
+  <rect x="718" y="106" width="380" height="24" rx="12" fill="#F1F5F9"/>
+  <text x="908" y="122" font-size="11" fill="#94A3B8" text-anchor="middle">job-search-agent.app/tracker</text>
+
+  <text x="648" y="158" font-size="16" font-weight="700" fill="#0F172A">Application tracker</text>
+  <text x="648" y="177" font-size="12" fill="#64748B">Synced automatically</text>
+
+  <rect x="648" y="204" width="472" height="30" fill="#F8FAFC"/>
+  <text x="660" y="223" font-size="11" font-weight="700" fill="#444441">Role</text>
+  <text x="852" y="223" font-size="11" font-weight="700" fill="#444441">Company</text>
+  <text x="980" y="223" font-size="11" font-weight="700" fill="#444441">Score</text>
+  <text x="1040" y="223" font-size="11" font-weight="700" fill="#444441">Status</text>
+  <line x1="648" y1="234" x2="1120" y2="234" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="840" y1="204" x2="840" y2="534" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="970" y1="204" x2="970" y2="534" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="1030" y1="204" x2="1030" y2="534" stroke="#F1F5F9" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <text x="660" y="268" font-size="12" fill="#1E293B">Sr Manager, Content Strategy</text>
+  <text x="852" y="268" font-size="11" fill="#64748B">Meridian Health</text>
+  <rect x="970" y="253" width="40" height="22" rx="11" fill="#E1F5EE"/>
+  <text x="990" y="268" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">8</text>
+  <rect x="1030" y="253" width="76" height="22" rx="11" fill="#E6F1FB"/>
+  <text x="1068" y="268" font-size="10" font-weight="700" fill="#0C447C" text-anchor="middle">Applied</text>
+  <line x1="648" y1="294" x2="1120" y2="294" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Row 2 (banded) -->
+  <rect x="648" y="294" width="472" height="60" fill="#FAFAF9"/>
+  <text x="660" y="328" font-size="12" fill="#1E293B">Knowledge Ops Lead</text>
+  <text x="852" y="328" font-size="11" fill="#64748B">Arcadia Digital</text>
+  <rect x="970" y="313" width="40" height="22" rx="11" fill="#E1F5EE"/>
+  <text x="990" y="328" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">9</text>
+  <rect x="1030" y="313" width="76" height="22" rx="11" fill="#FAEEDA"/>
+  <text x="1068" y="328" font-size="10" font-weight="700" fill="#633806" text-anchor="middle">Interested</text>
+  <line x1="648" y1="354" x2="1120" y2="354" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Row 3 -->
+  <text x="660" y="388" font-size="12" fill="#1E293B">Content Governance Mgr</text>
+  <text x="852" y="388" font-size="11" fill="#64748B">Bridgeway Group</text>
+  <rect x="970" y="373" width="40" height="22" rx="11" fill="#E1F5EE"/>
+  <text x="990" y="388" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">8</text>
+  <rect x="1030" y="373" width="76" height="22" rx="11" fill="#E6F1FB"/>
+  <text x="1068" y="388" font-size="10" font-weight="700" fill="#0C447C" text-anchor="middle">Applied</text>
+  <line x1="648" y1="414" x2="1120" y2="414" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Row 4 (banded) -->
+  <rect x="648" y="414" width="472" height="60" fill="#FAFAF9"/>
+  <text x="660" y="448" font-size="12" fill="#1E293B">KM Platform Analyst</text>
+  <text x="852" y="448" font-size="11" fill="#64748B">Solstice Labs</text>
+  <rect x="970" y="433" width="40" height="22" rx="11" fill="#F1EFE8"/>
+  <text x="990" y="448" font-size="11" font-weight="700" fill="#444441" text-anchor="middle">6</text>
+  <rect x="1030" y="433" width="76" height="22" rx="11" fill="#F1EFE8"/>
+  <text x="1068" y="448" font-size="10" font-weight="700" fill="#444441" text-anchor="middle">Reviewing</text>
+  <line x1="648" y1="474" x2="1120" y2="474" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Row 5 -->
+  <text x="660" y="508" font-size="12" fill="#1E293B">Content Ops Director</text>
+  <text x="852" y="508" font-size="11" fill="#64748B">Northgate Inc</text>
+  <rect x="970" y="493" width="40" height="22" rx="11" fill="#F1EFE8"/>
+  <text x="990" y="508" font-size="11" font-weight="700" fill="#444441" text-anchor="middle">7</text>
+  <rect x="1030" y="493" width="76" height="22" rx="11" fill="#FAEEDA"/>
+  <text x="1068" y="508" font-size="10" font-weight="700" fill="#633806" text-anchor="middle">Interested</text>
+  <line x1="648" y1="534" x2="1120" y2="534" stroke="#E2E8F0" stroke-width="1"/>
+
+  <text x="660" y="568" font-size="11" fill="#94A3B8">5 of 42 applications tracked</text>
+</svg>

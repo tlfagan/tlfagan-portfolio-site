@@ -1,0 +1,135 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2F6"/>
+    </linearGradient>
+    <radialGradient id="hubGrad" cx="35%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#2DD4BF"/>
+      <stop offset="55%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="16" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="trackerClip">
+      <rect x="760" y="170" width="360" height="374" rx="18"/>
+    </clipPath>
+  </defs>
+
+  <!-- background card -->
+  <rect x="16" y="16" width="1168" height="668" rx="28" fill="url(#bgGrad)" stroke="#E2E8F0" stroke-width="2"/>
+
+  <!-- scattered texture dots -->
+  <g fill="#CBD5E1" opacity="0.55">
+    <circle cx="60" cy="220" r="4"/>
+    <circle cx="255" cy="115" r="3"/>
+    <circle cx="65" cy="480" r="4"/>
+    <circle cx="285" cy="545" r="3"/>
+    <circle cx="45" cy="355" r="3"/>
+    <circle cx="205" cy="605" r="4"/>
+  </g>
+
+  <!-- converging curves: scattered postings -> hub -->
+  <g stroke="#94A3B8" stroke-width="2.5" fill="none" opacity="0.55" stroke-linecap="round">
+    <path d="M150,150 C280,160 380,220 505,295"/>
+    <path d="M95,290 C220,300 340,330 465,360"/>
+    <path d="M170,430 C280,440 400,430 505,425"/>
+    <path d="M110,560 C250,540 380,470 505,425"/>
+    <path d="M230,230 C320,250 420,270 505,295"/>
+  </g>
+
+  <!-- source nodes (job postings) -->
+  <g>
+    <circle cx="150" cy="150" r="24" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="138" y="144" width="24" height="4" rx="2" fill="#94A3B8"/>
+    <rect x="138" y="153" width="18" height="4" rx="2" fill="#CBD5E1"/>
+
+    <circle cx="95" cy="290" r="18" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="86" y="286" width="18" height="3.5" rx="1.75" fill="#94A3B8"/>
+    <rect x="86" y="293" width="13" height="3.5" rx="1.75" fill="#CBD5E1"/>
+
+    <circle cx="170" cy="430" r="28" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2"/>
+    <rect x="156" y="423" width="28" height="4" rx="2" fill="#94A3B8"/>
+    <rect x="156" y="433" width="20" height="4" rx="2" fill="#CBD5E1"/>
+
+    <circle cx="110" cy="560" r="15" fill="#CBD5E1" opacity="0.8"/>
+    <circle cx="230" cy="230" r="14" fill="#5EEAD4" opacity="0.85"/>
+  </g>
+
+  <!-- AI hub -->
+  <circle cx="560" cy="360" r="112" fill="none" stroke="#2DD4BF" stroke-width="2" stroke-dasharray="4 8" opacity="0.35"/>
+  <circle cx="560" cy="360" r="95" fill="url(#hubGrad)" filter="url(#glow)"/>
+
+  <!-- orbiting dots -->
+  <circle cx="650" cy="300" r="6" fill="#F59E0B"/>
+  <circle cx="470" cy="430" r="6" fill="#2DD4BF"/>
+  <circle cx="620" cy="440" r="5" fill="#F59E0B"/>
+
+  <!-- sparkle icon -->
+  <path d="M560,318 Q572,348 602,360 Q572,372 560,402 Q548,372 518,360 Q548,348 560,318 Z" fill="#FFFFFF" opacity="0.92"/>
+  <path d="M598,313 Q603,320 610,325 Q603,330 598,337 Q593,330 586,325 Q593,320 598,313 Z" fill="#FFFFFF" opacity="0.7"/>
+
+  <!-- diverging curves: hub -> tracker -->
+  <g stroke="#94A3B8" stroke-width="2.5" fill="none" opacity="0.55" stroke-linecap="round">
+    <path d="M615,300 C670,280 720,270 760,264"/>
+    <path d="M655,360 C700,350 730,346 760,344"/>
+    <path d="M615,420 C670,450 720,480 760,504"/>
+  </g>
+  <circle cx="760" cy="264" r="4" fill="#94A3B8"/>
+  <circle cx="760" cy="344" r="4" fill="#0D9488"/>
+  <circle cx="760" cy="504" r="4" fill="#0D9488"/>
+
+  <!-- tracker sheet tab -->
+  <rect x="800" y="544" width="70" height="14" rx="4" fill="#0F172A" opacity="0.15"/>
+
+  <!-- tracker container -->
+  <rect x="760" y="170" width="360" height="374" rx="18" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="2"/>
+
+  <g clip-path="url(#trackerClip)">
+    <!-- header -->
+    <path d="M760,188 a18,18 0 0 1 18,-18 h324 a18,18 0 0 1 18,18 v36 h-360 z" fill="#0F172A"/>
+    <rect x="800" y="193" width="40" height="8" rx="4" fill="#FFFFFF" opacity="0.85"/>
+    <rect x="920" y="193" width="40" height="8" rx="4" fill="#FFFFFF" opacity="0.85"/>
+    <rect x="1040" y="193" width="40" height="8" rx="4" fill="#FFFFFF" opacity="0.85"/>
+
+    <!-- row highlights -->
+    <rect x="760" y="304" width="360" height="80" fill="#5EEAD4" opacity="0.28"/>
+    <rect x="760" y="464" width="360" height="80" fill="#5EEAD4" opacity="0.28"/>
+
+    <!-- grid lines -->
+    <g stroke="#E2E8F0" stroke-width="1.5">
+      <line x1="760" y1="304" x2="1120" y2="304"/>
+      <line x1="760" y1="384" x2="1120" y2="384"/>
+      <line x1="760" y1="464" x2="1120" y2="464"/>
+      <line x1="880" y1="224" x2="880" y2="544"/>
+      <line x1="1000" y1="224" x2="1000" y2="544"/>
+    </g>
+
+    <!-- row 1 (neutral) -->
+    <rect x="775" y="259" width="90" height="10" rx="5" fill="#E2E8F0"/>
+    <rect x="895" y="259" width="90" height="10" rx="5" fill="#E2E8F0"/>
+    <rect x="1015" y="259" width="90" height="10" rx="5" fill="#E2E8F0"/>
+
+    <!-- row 2 (highlighted) -->
+    <circle cx="820" cy="344" r="14" fill="#0D9488"/>
+    <path d="M813,344 l5,5 l10,-11" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="905" y="339" width="70" height="10" rx="5" fill="#14B8A6" opacity="0.5"/>
+    <circle cx="1060" cy="344" r="8" fill="#F59E0B"/>
+
+    <!-- row 3 (neutral) -->
+    <rect x="775" y="419" width="90" height="10" rx="5" fill="#E2E8F0"/>
+    <rect x="895" y="419" width="90" height="10" rx="5" fill="#E2E8F0"/>
+    <rect x="1015" y="419" width="90" height="10" rx="5" fill="#E2E8F0"/>
+
+    <!-- row 4 (highlighted) -->
+    <circle cx="820" cy="504" r="14" fill="#0D9488"/>
+    <path d="M813,504 l5,5 l10,-11" stroke="#FFFFFF" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="905" y="499" width="70" height="10" rx="5" fill="#14B8A6" opacity="0.5"/>
+    <circle cx="1060" cy="504" r="8" fill="#F59E0B"/>
+  </g>
+</svg>
