@@ -57,6 +57,11 @@ const PROJECTS = {
     desc: 'Automated pipeline that scrapes job postings across sources, scores them for fit, and syncs the strongest matches into a live Google Sheets tracker. Built on Python and GitHub Actions, with a Claude-powered scoring step.',
     href: 'projects/job-search-agent.html'
   },
+  'recipe-box': {
+    title: 'Fagan Recipe Box',
+    desc: 'Full-stack family recipe manager that turns a pasted URL, photo, or PDF into a structured recipe via Claude — ingredients, instructions, and nutrition parsed straight into Airtable. Also tracks pantry and freezer inventory by quantity and unit, with photo-based bulk entry and a "what can I make" matcher against what\'s actually in stock.',
+    href: 'projects/recipe-box.html'
+  },
   'task-consolidator': {
     title: 'Task consolidation tool',
     desc: 'A Claude Code project using Google Sheets as a single source of truth to pull scattered tasks into one place, built as both a real workflow tool and a LinkedIn Learning course project.',
