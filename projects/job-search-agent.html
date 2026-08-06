@@ -12,7 +12,13 @@
 <main style="margin-left:0;padding:48px 24px;">
   <a href="../index.html#projects" style="font-size:12px;color:var(--text-muted);text-decoration:none;">← Back to projects</a>
   <h1 style="margin-top:24px;">Job search agent & tracker</h1>
-  <div class="placeholder-note" style="margin-top:20px;">Full process write-up not yet drafted. This page is a placeholder stub — structure is in place, content to follow.</div>
+  <div class="placeholder-note" style="margin-top:20px;">A Python automation that sources, scores, and tracks job postings across multiple boards, reducing manual triage to a daily priority list.<br><br>
+
+Roles are scored against structured fit criteria before reaching the tracker. Claude Haiku handles mechanical steps — fetching, deduplicating, filtering. Sonnet handles scoring and fit analysis. The pipeline runs automatically Monday, Wednesday, Friday, and Saturday at 6am.<br><br>
+
+Features in production: Multi-source scraping across Adzuna, Remotive, and The Muse. LLM-scored fit filtering with a configurable threshold. Gmail IMAP scanner that flags application-related emails — including soft rejections, using a classifier trained on phrasing like "progressing with other candidates" rather than hard rejection language. Google Sheets tracker updated via Apps Script webhook. On-demand "Today's Focus" generator that surfaces highest-priority actions from the current pipeline state.<br><br>
+
+Architecture: Python agent orchestrated via GitHub Actions on a scheduled cron. Claude API (Haiku for mechanical steps, Sonnet for judgment-heavy scoring) handles fit analysis. Google Sheets serves as the single source of truth, with a webhook-based write path via Apps Script. Gmail integration runs over IMAP. Deduplication is handled via a seen_jobs.txt log to prevent re-scoring previously evaluated postings.</div>
 </main>
 </body>
 </html>

@@ -12,7 +12,17 @@
 <main style="margin-left:0;padding:48px 24px;">
   <a href="../index.html#projects" style="font-size:12px;color:var(--text-muted);text-decoration:none;">← Back to projects</a>
   <h1 style="margin-top:24px;">Fagan Recipe Box</h1>
-  <div class="placeholder-note" style="margin-top:20px;">Full process write-up not yet drafted. This page is a placeholder stub — structure is in place, content to follow.</div>
+  <div class="placeholder-note" style="margin-top:20px;">Fagan Recipe Box is a production recipe management app for importing, organizing, and scaling recipes across devices for the whole family.<br><br>
+
+Recipes are imported by URL, pasted text, or photo scan. The AI extracts structured data from raw page content, with a pre-save review step for tags and details before anything hits the database.<br><br>
+
+Scale a recipe to any serving size and units convert inline. A pantry inventory tracks what's on hand across fridge, freezer, and dry storage. A "What Can I Make" view matches available ingredients to recipes ranked by fit. Out-of-stock items push directly to Google Tasks.<br><br>
+
+Features in production: tag-based filtering, sort by rating or macros, nutrition estimation via Claude, rich text instructions with formatting toolbar, bulk import for building out a library quickly, and a shared Airtable backend so the whole family reads from and writes to the same live data.<br><br>
+
+Architecture: Single-page app deployed via Vercel serverless functions, with the Claude API (Sonnet) handling recipe extraction and nutrition estimation. Airtable serves as the database via a token-authenticated proxy that keeps credentials off the client. Page content is fetched server-side before extraction to reduce AI drift on ingredient amounts.<br><br>
+
+Up next: Bulk import accuracy improvements, general UI enhancements.</div>
 </main>
 </body>
 </html>

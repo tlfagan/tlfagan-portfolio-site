@@ -12,7 +12,17 @@
 <main style="margin-left:0;padding:48px 24px;">
   <a href="../index.html#projects" style="font-size:12px;color:var(--text-muted);text-decoration:none;">← Back to projects</a>
   <h1 style="margin-top:24px;">Seabright</h1>
-  <div class="placeholder-note" style="margin-top:20px;">Full process write-up not yet drafted. This page is a placeholder stub — structure is in place, content to follow.</div>
+  <div class="placeholder-note" style="margin-top:20px;">Seabright — AI-powered guest assistant for a family vacation home
+
+Seabright is a production conversational AI assistant that answers guest questions as the house itself, reducing texts to the homeowner. Safety information — pool rules, emergency contacts, shutdown procedures — is surfaced proactively and never softened.<br><br>
+
+The assistant has a distinct personality: modern, confident, refined, and slightly snarky. It also carries a set of real house memories — running jokes, family quirks — that surface when context allows, making it feel specific to this place rather than a generic FAQ.<br><br>
+
+Features in production: contextual reference photos on answers, live weather/UV/tide conditions panel, shared shopping list, per-answer feedback loop with pre-filled context, and a general notes channel to the homeowner.<br><br>
+
+Architecture: Built on Next.js and deployed via Vercel serverless functions, with the Claude API (Sonnet) handling conversation. The knowledge base started hardcoded in the system prompt and migrated to Airtable, so facts can be updated with no redeploy. A 35-question regression harness runs against the live endpoint before any change ships. Additional integrations include Open-Meteo (weather/UV), NOAA (tides), and Google Forms (feedback). Auth is handled via middleware-based HTTP Basic Auth with a single environment variable as the gate.<br><br>
+
+Up next: Seabright is being adapted as a clean template for other households, with configuration for house-specific content, branding, and local conditions baked in from the start.</div>
 </main>
 </body>
 </html>
