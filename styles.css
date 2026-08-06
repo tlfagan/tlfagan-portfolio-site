@@ -427,6 +427,45 @@ h2 { font-size: 18px; font-weight: 500; margin: 0 0 12px; }
   padding: 16px;
 }
 
+/* ---------- project detail write-ups ---------- */
+.project-video {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  border-radius: var(--radius);
+  margin: 20px 0 0;
+  display: block;
+  background: var(--surface, #f7f8fa);
+}
+.project-video-placeholder {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  margin: 20px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+}
+
+.project-stack { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin: 20px 0 28px; }
+.project-stack img { width: 26px; height: 26px; }
+
+.project-body { font-size: 14px; line-height: 1.7; color: var(--text-secondary); }
+.project-body p { margin: 0 0 16px; }
+.project-body h3 {
+  font-size: 13px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin: 24px 0 8px;
+}
+.project-body h3:first-of-type { margin-top: 0; }
+
 /* ---------- contact ---------- */
 .contact-links { display: flex; flex-direction: column; gap: 10px; }
 .contact-links a { font-size: 14px; text-decoration: none; }
