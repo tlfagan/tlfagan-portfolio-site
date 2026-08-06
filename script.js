@@ -47,8 +47,8 @@ sections.forEach((section) => observer.observe(section));
 
 // ---------- lightbox ----------
 const PROJECTS = {
-  seabright: {
-    title: 'Seabright',
+  'Home Assistant': {
+    title: 'Home Assistant',
     desc: 'Full-stack AI-powered assistant for a family vacation property. Migrated the knowledge base from a hardcoded prompt to structured Airtable data, and runs a 35-case regression suite against the live production API to catch context bleeding and hallucination before guests see it.',
     href: 'projects/seabright.html'
   },
@@ -58,7 +58,7 @@ const PROJECTS = {
     href: 'projects/job-search-agent.html'
   },
   'recipe-box': {
-    title: 'Fagan Recipe Box',
+    title: 'Family Recipe Box',
     desc: 'Full-stack family recipe manager that turns a pasted URL, photo, or PDF into a structured recipe via Claude — ingredients, instructions, and nutrition parsed straight into Airtable. Also tracks pantry and freezer inventory by quantity and unit, with photo-based bulk entry and a "what can I make" matcher against what\'s actually in stock.',
     href: 'projects/recipe-box.html'
   },
