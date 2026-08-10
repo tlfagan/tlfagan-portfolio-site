@@ -283,11 +283,11 @@ h2 { font-size: 18px; font-weight: 500; margin: 0 0 12px; }
   transition: transform 0.15s ease;
 }
 
-.exp-more[open] .exp-toggle::after { transform: rotate(180deg); }
+.exp-more[open] > .exp-toggle::after { transform: rotate(180deg); }
 
 .exp-toggle .see-less { display: none; }
-.exp-more[open] .exp-toggle .see-more { display: none; }
-.exp-more[open] .exp-toggle .see-less { display: inline; }
+.exp-more[open] > .exp-toggle .see-more { display: none; }
+.exp-more[open] > .exp-toggle .see-less { display: inline; }
 
 /* ---------- stack ---------- */
 #stack-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
