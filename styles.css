@@ -259,6 +259,36 @@ h2 { font-size: 18px; font-weight: 500; margin: 0 0 12px; }
   border-bottom: 1px solid var(--text-muted);
 }
 
+.exp-more { margin: -4px 0 20px; }
+.exp-more-body { padding-top: 20px; }
+.exp-more-body .exp-row:last-child { margin-bottom: 0; }
+
+.exp-toggle {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--text-muted);
+  list-style: none;
+}
+
+.exp-toggle::-webkit-details-marker { display: none; }
+
+.exp-toggle::after {
+  content: "\25BE";
+  font-size: 10px;
+  color: var(--text-muted);
+  transition: transform 0.15s ease;
+}
+
+.exp-more[open] .exp-toggle::after { transform: rotate(180deg); }
+
+.exp-toggle .see-less { display: none; }
+.exp-more[open] .exp-toggle .see-more { display: none; }
+.exp-more[open] .exp-toggle .see-less { display: inline; }
+
 /* ---------- stack ---------- */
 #stack-row { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; }
 #stack-row img { width: 28px; height: 28px; }
