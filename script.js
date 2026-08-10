@@ -83,7 +83,7 @@ function openLightbox(slug, imgSrc, triggerEl) {
   lightboxImg.src = imgSrc;
   lightboxImg.alt = project.title;
   lightboxTitle.textContent = project.title;
-  lightboxDesc.textContent = project.desc;
+  lightboxDesc.innerHTML = project.desc;
   lightboxLink.setAttribute('href', project.href);
   lightbox.hidden = false;
   document.body.style.overflow = 'hidden';
