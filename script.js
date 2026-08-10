@@ -49,7 +49,7 @@ sections.forEach((section) => observer.observe(section));
 const PROJECTS = {
   'Home Assistant': {
     title: 'Home Assistant',
-    desc: 'Full-stack AI-powered assistant for a family vacation property. Migrated the knowledge base from a hardcoded prompt to structured Airtable data, and runs a 35-case regression suite against the live production API to catch context bleeding and hallucination before guests see it.',
+    desc: 'A conversational AI assistant for a family vacation property — guests ask questions and get answers from "Seabright" (the house nickname), reducing texts to the homeowner to near zero. Built on Next.js, Vercel, and the Claude API, with a structured Airtable knowledge base that lets content be updated from a phone with no code deploy. Features in production include a live conditions panel (weather, UV, tides via Open-Meteo and NOAA), a shared shopping list, reference photos surfaced contextually on answers, and QR code deep-links to pre-filled questions. A 35-case regression suite runs against the live API to catch hallucination and context bleed before guests see it. Currently exploring adaptation for other households as a lightweight template.',
     href: 'projects/seabright.html'
   },
   'job-search-agent': {
