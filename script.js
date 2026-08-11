@@ -49,17 +49,18 @@ sections.forEach((section) => observer.observe(section));
 const PROJECTS = {
   'Home Assistant': {
     title: 'Home Assistant',
-    desc: 'A conversational AI assistant for a family vacation property — guests ask questions and get answers from "Seabright" (the house nickname), reducing texts to the homeowner to near zero. Built on Next.js, Vercel, and the Claude API, with a structured Airtable knowledge base that lets content be updated from a phone with no code deploy. Features in production include a live conditions panel (weather, UV, tides via Open-Meteo and NOAA), a shared shopping list, reference photos surfaced contextually on answers, and QR code deep-links to pre-filled questions. A 35-case regression suite runs against the live API to catch hallucination and context bleed before guests see it. Currently exploring adaptation for other households as a lightweight template.',
+    desc: 'A conversational AI assistant for a family vacation property — guests ask questions and get answers from "Seabright" (the house nickname), reducing texts, calls, and yells across the house. <br><br>Vibe-coded, built on Next.js, Vercel, and the Claude API, with a structured Airtable knowledge base for convenient updates. <br><br>Features in production include a live conditions panel (weather, UV, tides via Open-Meteo and NOAA), a shared shopping list, reference photos surfaced contextually on answers, and QR code deep-links to pre-filled questions. A 35-case regression suite runs against the live API to catch hallucination and context bleed before guests see it. <br><br>Currently exploring adaptation for other households as a lightweight template.',
     href: 'projects/seabright.html'
   },
   'job-search-agent': {
     title: 'Job search agent & tracker',
-    desc: 'Automated pipeline that scrapes job postings across sources, scores them for fit, and syncs the strongest matches into a live Google Sheets tracker. Built on Python and GitHub Actions, with a Claude-powered scoring step.',
+    desc: 'Automated pipeline that scrapes job postings across sources, scores them for fit and personal preferences, and syncs the strongest matches into a live Google Sheets tracker. <br><br>Built on Python and GitHub Actions, with a Claude-powered scoring step.',
     href: 'projects/job-search-agent.html'
   },
   'recipe-box': {
     title: 'Family Recipe Box',
-    desc: 'Full-stack family recipe manager that turns a pasted URL, photo, or PDF into a structured recipe via Claude — ingredients, instructions, and nutrition parsed straight into Airtable. Also tracks pantry and freezer inventory by quantity and unit, with photo-based bulk entry and a "what can I make" matcher against what\'s actually in stock.',
+    desc: 'Full-stack family recipe manager that turns a pasted URL, photo, or PDF into a structured recipe via Claude — ingredients, instructions, and nutrition parsed straight into Airtable. <br><br>Also tracks pantry and freezer inventory by quantity and unit, with photo-based bulk entry and a "what can I make" matcher against what\'s actually in stock.<br><br>
+      Most recently added a feature that combines recipes and generate an editable shopping list I can send directly to Google Tasks.',
     href: 'projects/recipe-box.html'
   },
   'task-consolidator': {
