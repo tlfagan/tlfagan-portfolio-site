@@ -59,8 +59,7 @@ const PROJECTS = {
   },
   'recipe-box': {
     title: 'Family Recipe Box',
-    desc: 'Full-stack family recipe manager that turns a pasted URL, photo, or PDF into a structured recipe via Claude — ingredients, instructions, and nutrition parsed straight into Airtable. <br><br>Also tracks pantry and freezer inventory by quantity and unit, with photo-based bulk entry and a "what can I make" matcher against what\'s actually in stock.<br><br>
-      Most recently added a feature that combines recipes and generate an editable shopping list I can send directly to Google Tasks.',
+    desc: 'Full-stack family recipe manager that turns a pasted URL, photo, or PDF into a structured recipe via Claude — ingredients, instructions, and nutrition parsed straight into Airtable. <br><br>Also tracks pantry and freezer inventory by quantity and unit, with photo-based bulk entry and a "what can I make" matcher against what\'s actually in stock.<br><br>Most recently added a feature that combines recipes and generates an editable shopping list I can send directly to Google Tasks.',
     href: 'projects/recipe-box.html'
   },
   'task-consolidator': {
