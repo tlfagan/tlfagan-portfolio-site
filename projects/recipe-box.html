@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Family Recipe Box — Tim Fagan</title>
+<title>What Don't You Want — Tim Fagan</title>
 <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
 <link rel="stylesheet" href="../styles.css">
 <style>main{max-width:640px;}</style>
@@ -11,7 +11,7 @@
 <body>
 <main style="margin:0 auto;padding:48px 24px;">
   <a href="../index.html#projects" style="font-size:12px;color:var(--text-muted);text-decoration:none;">← Back to projects</a>
-  <h1 style="margin-top:24px;">Family Recipe Box</h1>
+  <h1 style="margin-top:24px;">What Don't You Want</h1>
 
   <!-- TODO: drop a looping demo clip at ../assets/videos/recipe-box-demo.mp4 (and .webm if you have it),
        then swap this div for:
@@ -29,18 +29,18 @@
   </div>
 
   <div class="project-body">
-    <p>Family Recipe Box is a production recipe management app for importing, organizing, and scaling recipes across devices for the whole family.</p>
+    <p>What Don't You Want (formerly Family Recipe Box) is a production recipe management app for importing, organizing, and scaling recipes across devices for the whole family.</p>
     <p>Recipes are imported by URL, pasted text, or photo scan. The AI extracts structured data from raw page content, with a pre-save review step for tags and details before anything hits the database.</p>
-    <p>Scale a recipe to any serving size and units convert inline. A pantry inventory tracks what's on hand across fridge, freezer, and dry storage. A "What Can I Make" view matches available ingredients to recipes ranked by fit. Shopping list and out-of-stock items push directly to Google Sheets.</p>
+    <p>Scale a recipe to any serving size and units convert inline. A pantry inventory tracks what's on hand across fridge, freezer, and dry storage. A "What Can I Make" view matches available ingredients to recipes ranked by fit. Shopping list and out-of-stock items push directly to Google Sheets, with checkboxes and strikethrough tracked right in the Sheet.</p>
 
     <h3>Features in production</h3>
-    <p>Tag-based filtering, sort by rating or macros, nutrition estimation via Claude, rich text instructions with formatting toolbar, bulk import for building out a library quickly, and a shared Airtable backend so the whole family reads from and writes to the same live data.</p>
+    <p>Tag-based filtering, sort by rating or macros, nutrition estimation via Claude, rich text instructions with formatting toolbar, bulk import for building out a library quickly, and a shared Airtable backend so the whole family reads from and writes to the same live data. Per-ingredient swap suggestions (pantry-aware substitutes) and full recipe variants for dietary tweaks, linked back to the source recipe.</p>
 
     <h3>Architecture</h3>
     <p>Single-page app deployed via Vercel serverless functions, with the Claude API (Sonnet) handling recipe extraction and nutrition estimation. Airtable serves as the database via a token-authenticated proxy that keeps credentials off the client. Page content is fetched server-side before extraction to reduce AI drift on ingredient amounts.</p>
 
     <h3>Up next</h3>
-    <p>Custom "what can I make" modal for left-over ingredients; general cooking tips and tricks (ingredient swaps, time and temp guidelines); more recipes; general UI enhancements.</p>
+    <p>Recipe card / grid UI redesign for Browse; custom "what can I make" modal for left-over ingredients; general cooking tips and tricks (time and temp guidelines); more recipes.</p>
   </div>
 </main>
 </body>
