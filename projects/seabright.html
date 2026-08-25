@@ -33,10 +33,10 @@
     <p>Contextual reference photos on answers, live weather/UV/tide conditions panel, shared shopping list, per-answer feedback loop with pre-filled context, and a general notes channel to the homeowner.</p>
 
     <h3>Architecture</h3>
-    <p>Built on Next.js and deployed via Vercel serverless functions, with the Claude API (Sonnet) handling conversation. The knowledge base started hardcoded in the system prompt and migrated to Airtable, so facts can be updated with no redeploy. A 35-question regression harness runs against the live endpoint before any change ships. Additional integrations include Open-Meteo (weather/UV), NOAA (tides), and Google Forms (feedback). Auth is handled via middleware-based HTTP Basic Auth with a single environment variable as the gate.</p>
+    <p>Static front end deployed via Vercel serverless functions, with the Claude API (Sonnet) handling conversation. The knowledge base started hardcoded in the system prompt and migrated to Airtable, so facts can be updated with no redeploy. A 35-question regression harness runs against the live endpoint before any change ships. Additional integrations include Open-Meteo (weather/UV), NOAA (tides), and Google Forms (feedback). Auth is a custom login page backed by a hashed session cookie (SHA-256 of the shared password, never the password itself) rather than the browser's native Basic Auth popup.</p>
 
     <h3>Up next</h3>
-    <p>Seabright is being adapted as a clean template for other households, with configuration for house-specific content, branding, and local conditions baked in from the start.</p>
+    <p>Seabright now has a decided path to a template repo — a fresh, history-free <code>seabright-template</code> other households fork instead of this repo — and its first real duplication attempt is underway with a networking contact.</p>
   </div>
 </main>
 </body>

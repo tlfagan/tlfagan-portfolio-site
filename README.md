@@ -14,7 +14,7 @@ This is a first-pass scaffold, not a finished site. Full context and design spec
 1. **`assets/resume.pdf`** — does not exist yet. The link in the Experience section points to it but the file needs to be added once the resume is finalized.
 2. **Personal section** — just a dashed placeholder box right now. Floated idea: a callout linking an old personal blog. Not decided.
 3. **Project card copy** — the three project summaries are reasonable but not final marketing copy, refine as needed.
-4. **`/projects/*.html`** — all three are stub pages with a "not yet drafted" placeholder. These need the actual process write-ups Tim wants to include per project.
+4. **`/projects/*.html`** — `recipe-box.html` and `job-search-agent.html` now have full Overview/Features/Architecture write-ups. Only `task-consolidator.html` is still a bare "not yet drafted" placeholder stub.
 5. **Testimonial row** — currently a plain horizontal scroll, not the fade-on-inactive-card treatment from the original Framer site. Functional, not final polish.
 6. **Photo** — `#photo` is an empty circle placeholder, real headshot not wired in yet.
 7. **Font stack** — using system fonts for now. Original template's actual typeface hasn't been matched.
