@@ -23,6 +23,7 @@
 
   <div class="project-stack">
     <img src="../assets/icons/vercel.svg" alt="" title="Vercel">
+    <img src="../assets/icons/anthropic.svg" alt="" title="Anthropic Claude">
     <img src="../assets/icons/airtable.svg" alt="" title="Airtable">
     <img src="../assets/icons/javascript.svg" alt="" title="JavaScript">
   </div>
@@ -33,9 +34,10 @@
 
     <h3>Features in production</h3>
     <p>True WHS Handicap Index calculation (the real Rule 5.1 scaling table) computed server-side and written back to Airtable, feeding a leaderboard ranked by handicap with tie handling — showing both the 9-hole index and its 18-hole equivalent, plus total rounds played per player. Support for 9-hole rounds and multi-tee courses — a course played twice with different tees per nine correctly shows the right par and yardage for each pass. Course setup includes a per-hole editor for par, yardage, and handicap rank and a rounds-played count per course, plus a custom login gate matching the site's own look.</p>
+    <p>A scorecard-photo import lets you snap a picture of the handwritten paper card instead of entering scores by hand — Claude's vision API reads each player's per-hole strokes, matches names against the roster, and shows an editable review screen before anything is saved to Airtable.</p>
 
     <h3>Architecture</h3>
-    <p>Frontend is Preact + htm loaded via CDN — no build step, keeping the same lightweight deploy model as the other apps in this set, with real component state for the scorecard grid and holes editor. Vercel serverless functions handle the API and the handicap math; Airtable is the database (Players, Courses, Holes, Rounds, Scores).</p>
+    <p>Frontend is Preact + htm loaded via CDN — no build step, keeping the same lightweight deploy model as the other apps in this set, with real component state for the scorecard grid and holes editor. Vercel serverless functions handle the API, the handicap math, and the Claude vision call behind scorecard-photo parsing; Airtable is the database (Players, Courses, Holes, Rounds, Scores).</p>
 
     <h3>Up next</h3>
     <p>Deciding whether to bring back the league's old weekly points/pot system as a real feature, or leave it retired.</p>
