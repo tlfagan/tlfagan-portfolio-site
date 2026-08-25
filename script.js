@@ -64,7 +64,7 @@ const PROJECTS = {
   },
   'golf-league': {
     title: 'Garden Golf League',
-    desc: 'Live scoring and handicap app built for my own weekly golf league — pick attendees, log a round, and enter scores hole-by-hole with live Out/In/Total and Net/Differential. <br><br>Handicap Index computes server-side against the real WHS scaling table and feeds a leaderboard ranked by handicap, with support for 9-hole rounds and multi-tee courses. <br><br>Built on Preact + htm (no build step), Vercel serverless functions, and Airtable — the same lightweight deploy pattern as Home Assistant and What Don\'t You Want.',
+    desc: 'Live scoring and handicap app built for my own weekly golf league — pick attendees, log a round, and enter scores hole-by-hole with live Out/In/Total and Net/Differential. <br><br>Handicap Index computes server-side against the real WHS scaling table and feeds a leaderboard ranked by handicap — showing both the 9-hole index and its 18-hole equivalent alongside rounds played — with support for 9-hole rounds and multi-tee courses. <br><br>Built on Preact + htm (no build step), Vercel serverless functions, and Airtable — the same lightweight deploy pattern as Home Assistant and What Don\'t You Want.',
     href: 'projects/golf-league.html'
   },
   'task-consolidator': {
