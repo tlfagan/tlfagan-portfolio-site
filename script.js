@@ -53,7 +53,7 @@ const PROJECTS = {
     href: 'projects/seabright.html'
   },
   'job-search-agent': {
-    title: 'Job search agent & tracker',
+    title: 'Job Search Agent & Tracker',
     desc: 'Automated pipeline that scrapes job postings across sources, scores them for fit and personal preferences, and syncs the strongest matches into a live Google Sheets tracker. <br><br>Built on Python and GitHub Actions, with a Claude-powered scoring step.',
     href: 'projects/job-search-agent.html'
   },
