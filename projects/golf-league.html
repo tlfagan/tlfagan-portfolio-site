@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Garden Golf League — Tim Fagan</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../styles.css">
+<style>main{max-width:640px;}</style>
+</head>
+<body>
+<main style="margin:0 auto;padding:48px 24px;">
+  <a href="../index.html#projects" style="font-size:12px;color:var(--text-muted);text-decoration:none;">← Back to projects</a>
+  <h1 style="margin-top:24px;">Garden Golf League</h1>
+
+  <!-- TODO: drop a looping demo clip at ../assets/videos/golf-league-demo.mp4 (and .webm if you have it),
+       then swap this div for:
+       <video class="project-video" autoplay muted loop playsinline poster="../assets/mockups/golf-league-mockup.svg">
+         <source src="../assets/videos/golf-league-demo.webm" type="video/webm">
+         <source src="../assets/videos/golf-league-demo.mp4" type="video/mp4">
+       </video> -->
+  <div class="project-video-placeholder">FPO - demo clip coming soon</div>
+
+  <div class="project-stack">
+    <img src="../assets/icons/vercel.svg" alt="" title="Vercel">
+    <img src="../assets/icons/airtable.svg" alt="" title="Airtable">
+    <img src="../assets/icons/javascript.svg" alt="" title="JavaScript">
+  </div>
+
+  <div class="project-body">
+    <p>Garden Golf League is a live scoring and handicap app built for my own weekly golf league, on the same Airtable + Vercel serverless pattern as Home Assistant and What Don't You Want.</p>
+    <p>The Scores tab drives the whole workflow: pick who's playing from a roster checklist, set the date and course, and the app builds a real scorecard — hole-by-hole par and yardage, per-player stepper entry, and live Out/In/Total subtotals. Saving computes Net and Differential immediately.</p>
+
+    <h3>Features in production</h3>
+    <p>True WHS Handicap Index calculation (the real Rule 5.1 scaling table) computed server-side and written back to Airtable, feeding a leaderboard ranked by handicap with tie handling. Support for 9-hole rounds and multi-tee courses — a course played twice with different tees per nine correctly shows the right par and yardage for each pass. Course setup includes a per-hole editor for par, yardage, and handicap rank, plus a custom login gate matching the site's own look.</p>
+
+    <h3>Architecture</h3>
+    <p>Frontend is Preact + htm loaded via CDN — no build step, keeping the same lightweight deploy model as the other apps in this set, with real component state for the scorecard grid and holes editor. Vercel serverless functions handle the API and the handicap math; Airtable is the database (Players, Courses, Holes, Rounds, Scores).</p>
+
+    <h3>Up next</h3>
+    <p>Deciding whether to bring back the league's old weekly points/pot system as a real feature, or leave it retired.</p>
+  </div>
+</main>
+</body>
+</html>

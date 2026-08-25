@@ -62,6 +62,11 @@ const PROJECTS = {
     desc: 'Full-stack family recipe manager (formerly "Family Recipe Box") that imports from URL, photo, or PDF into a structured recipe via Claude — ingredients, instructions, and nutrition parsed straight into Airtable. <br><br>Also tracks pantry and freezer inventory by quantity and unit, with photo-based bulk entry and a "what can I make" matcher against what\'s actually in stock.<br><br>Most recently: a shopping list that combines recipes and sends an editable, checkbox-tracked list straight to Google Sheets, plus per-ingredient swap suggestions and recipe variants for dietary tweaks.',
     href: 'projects/recipe-box.html'
   },
+  'golf-league': {
+    title: 'Garden Golf League',
+    desc: 'Live scoring and handicap app built for my own weekly golf league — pick attendees, log a round, and enter scores hole-by-hole with live Out/In/Total and Net/Differential. <br><br>Handicap Index computes server-side against the real WHS scaling table and feeds a leaderboard ranked by handicap, with support for 9-hole rounds and multi-tee courses. <br><br>Built on Preact + htm (no build step), Vercel serverless functions, and Airtable — the same lightweight deploy pattern as Home Assistant and What Don\'t You Want.',
+    href: 'projects/golf-league.html'
+  },
   'task-consolidator': {
     title: 'Task consolidation tool',
     desc: 'A Claude Code project using Google Sheets as a single source of truth to pull scattered tasks into one place, built as both a real workflow tool and a LinkedIn Learning course project.',

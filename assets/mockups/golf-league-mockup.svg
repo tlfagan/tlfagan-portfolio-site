@@ -1,0 +1,128 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" fill="#1E293B">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F8FAFC"/>
+      <stop offset="100%" stop-color="#EEF2F6"/>
+    </linearGradient>
+    <filter id="panelShadow2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="10" flood-color="#0F172A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect x="16" y="16" width="1168" height="668" rx="28" fill="url(#bgGrad2)" stroke="#E2E8F0" stroke-width="2"/>
+
+  <!-- ===================== LEFT PANEL: LEADERBOARD ===================== -->
+  <rect x="56" y="90" width="520" height="520" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#panelShadow2)"/>
+  <path d="M56,106 a16,16 0 0 1 16,-16 h488 a16,16 0 0 1 16,16 v24 h-520 z" fill="#F8FAFC"/>
+  <circle cx="76" cy="118" r="5" fill="#F4B4B4"/>
+  <circle cx="94" cy="118" r="5" fill="#F7D08A"/>
+  <circle cx="112" cy="118" r="5" fill="#A8DDB0"/>
+  <rect x="150" y="106" width="380" height="24" rx="12" fill="#F1F5F9"/>
+  <text x="340" y="122" font-size="11" fill="#94A3B8" text-anchor="middle">gardengolfleague.site/roster</text>
+
+  <text x="80" y="158" font-size="16" font-weight="700" fill="#0F172A">Leaderboard</text>
+  <text x="80" y="177" font-size="12" fill="#64748B">Ranked by Handicap Index</text>
+  <line x1="80" y1="192" x2="552" y2="192" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Entry 1 -->
+  <circle cx="104" cy="226" r="16" fill="#1D9E75"/>
+  <text x="104" y="230" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">TF</text>
+  <text x="136" y="222" font-size="13" font-weight="700" fill="#0F172A">1. Tim Fagan</text>
+  <rect x="486" y="212" width="56" height="22" rx="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="514" y="227" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">4.2</text>
+  <text x="136" y="242" font-size="11" fill="#64748B">Low index all season</text>
+  <text x="136" y="262" font-size="11" fill="#94A3B8">14 rounds played</text>
+  <text x="136" y="300" font-size="11" fill="#185FA5">View profile →</text>
+  <line x1="80" y1="322" x2="552" y2="322" stroke="#F1F5F9" stroke-width="1"/>
+
+  <!-- Entry 2 -->
+  <circle cx="104" cy="352" r="16" fill="#378ADD"/>
+  <text x="104" y="356" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">MM</text>
+  <text x="136" y="348" font-size="13" font-weight="700" fill="#0F172A">2. Mike Miller</text>
+  <rect x="486" y="338" width="56" height="22" rx="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="514" y="353" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">6.8</text>
+  <text x="136" y="368" font-size="11" fill="#64748B">Won June low net</text>
+  <text x="136" y="388" font-size="11" fill="#94A3B8">12 rounds played</text>
+  <text x="136" y="426" font-size="11" fill="#185FA5">View profile →</text>
+  <line x1="80" y1="448" x2="552" y2="448" stroke="#F1F5F9" stroke-width="1"/>
+
+  <!-- Entry 3 -->
+  <circle cx="104" cy="478" r="16" fill="#7F77DD"/>
+  <text x="104" y="482" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">JF</text>
+  <text x="136" y="474" font-size="13" font-weight="700" fill="#0F172A">3. John Fry</text>
+  <rect x="486" y="464" width="56" height="22" rx="11" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1"/>
+  <text x="514" y="479" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">7.1</text>
+  <text x="136" y="494" font-size="11" fill="#64748B">Most improved</text>
+  <text x="136" y="514" font-size="11" fill="#94A3B8">9 rounds played</text>
+  <text x="136" y="552" font-size="11" fill="#185FA5">View profile →</text>
+
+  <!-- ===================== CONNECTOR ===================== -->
+  <line x1="578" y1="350" x2="596" y2="350" stroke="#94A3B8" stroke-width="2"/>
+  <circle cx="600" cy="350" r="24" fill="#E1F5EE" stroke="#0F6E56" stroke-width="1.5"/>
+  <path d="M592,342 h13 v-5 l11,13 l-11,13 v-5 h-13 z" fill="#0F6E56"/>
+  <line x1="604" y1="350" x2="622" y2="350" stroke="#94A3B8" stroke-width="2"/>
+
+  <!-- ===================== RIGHT PANEL: SCORECARD ===================== -->
+  <rect x="624" y="90" width="520" height="520" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" filter="url(#panelShadow2)"/>
+  <path d="M624,106 a16,16 0 0 1 16,-16 h488 a16,16 0 0 1 16,16 v24 h-520 z" fill="#F8FAFC"/>
+  <circle cx="644" cy="118" r="5" fill="#F4B4B4"/>
+  <circle cx="662" cy="118" r="5" fill="#F7D08A"/>
+  <circle cx="680" cy="118" r="5" fill="#A8DDB0"/>
+  <rect x="718" y="106" width="380" height="24" rx="12" fill="#F1F5F9"/>
+  <text x="908" y="122" font-size="11" fill="#94A3B8" text-anchor="middle">gardengolfleague.site/scores</text>
+
+  <text x="648" y="158" font-size="16" font-weight="700" fill="#0F172A">Round — Flourtown CC</text>
+  <text x="648" y="177" font-size="12" fill="#64748B">Aug 17 · 18 holes</text>
+
+  <rect x="648" y="204" width="472" height="30" fill="#F8FAFC"/>
+  <text x="660" y="223" font-size="11" font-weight="700" fill="#444441">Player</text>
+  <text x="838" y="223" font-size="11" font-weight="700" fill="#444441">Out</text>
+  <text x="900" y="223" font-size="11" font-weight="700" fill="#444441">In</text>
+  <text x="960" y="223" font-size="11" font-weight="700" fill="#444441">Total</text>
+  <text x="1040" y="223" font-size="11" font-weight="700" fill="#444441">Net</text>
+  <line x1="648" y1="234" x2="1120" y2="234" stroke="#E2E8F0" stroke-width="1"/>
+  <line x1="828" y1="204" x2="828" y2="534" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="890" y1="204" x2="890" y2="534" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="950" y1="204" x2="950" y2="534" stroke="#F1F5F9" stroke-width="1"/>
+  <line x1="1010" y1="204" x2="1010" y2="534" stroke="#F1F5F9" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <text x="660" y="268" font-size="12" fill="#1E293B">Tim Fagan</text>
+  <text x="838" y="268" font-size="11" fill="#64748B">40</text>
+  <text x="900" y="268" font-size="11" fill="#64748B">38</text>
+  <text x="960" y="268" font-size="11" fill="#64748B">78</text>
+  <rect x="1010" y="253" width="44" height="22" rx="11" fill="#E1F5EE"/>
+  <text x="1032" y="268" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">74</text>
+  <line x1="648" y1="294" x2="1120" y2="294" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Row 2 (banded) -->
+  <rect x="648" y="294" width="472" height="60" fill="#FAFAF9"/>
+  <text x="660" y="328" font-size="12" fill="#1E293B">Mike Miller</text>
+  <text x="838" y="328" font-size="11" fill="#64748B">42</text>
+  <text x="900" y="328" font-size="11" fill="#64748B">39</text>
+  <text x="960" y="328" font-size="11" fill="#64748B">81</text>
+  <rect x="1010" y="313" width="44" height="22" rx="11" fill="#E1F5EE"/>
+  <text x="1032" y="328" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">75</text>
+  <line x1="648" y1="354" x2="1120" y2="354" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Row 3 -->
+  <text x="660" y="388" font-size="12" fill="#1E293B">John Fry</text>
+  <text x="838" y="388" font-size="11" fill="#64748B">44</text>
+  <text x="900" y="388" font-size="11" fill="#64748B">41</text>
+  <text x="960" y="388" font-size="11" fill="#64748B">85</text>
+  <rect x="1010" y="373" width="44" height="22" rx="11" fill="#E1F5EE"/>
+  <text x="1032" y="388" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">78</text>
+  <line x1="648" y1="414" x2="1120" y2="414" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- Row 4 (banded) -->
+  <rect x="648" y="414" width="472" height="60" fill="#FAFAF9"/>
+  <text x="660" y="448" font-size="12" fill="#1E293B">Keith Mondock</text>
+  <text x="838" y="448" font-size="11" fill="#64748B">45</text>
+  <text x="900" y="448" font-size="11" fill="#64748B">43</text>
+  <text x="960" y="448" font-size="11" fill="#64748B">88</text>
+  <rect x="1010" y="433" width="44" height="22" rx="11" fill="#E1F5EE"/>
+  <text x="1032" y="448" font-size="11" font-weight="700" fill="#085041" text-anchor="middle">79</text>
+  <line x1="648" y1="474" x2="1120" y2="474" stroke="#E2E8F0" stroke-width="1"/>
+
+  <text x="660" y="508" font-size="11" fill="#94A3B8">4 of 17 players logged this round</text>
+</svg>
