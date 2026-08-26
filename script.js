@@ -59,7 +59,7 @@ const PROJECTS = {
   },
   'recipe-box': {
     title: "What Don't You Want",
-    desc: 'Full-stack family recipe manager (formerly "Family Recipe Box") that imports from URL, photo, or PDF into a structured recipe via Claude — ingredients, instructions, and nutrition parsed straight into Airtable. <br><br>Also tracks pantry and freezer inventory by quantity and unit, with photo-based bulk entry and a "what can I make" matcher against what\'s actually in stock.<br><br>Most recently: a shopping list that combines recipes and sends an editable, checkbox-tracked list straight to Google Sheets, plus per-ingredient swap suggestions and recipe variants for dietary tweaks.',
+    desc: 'Full-stack family recipe manager (<a href="https://youtu.be/p-FX_7SFSsM?si=jWTfK1S-SRuTPZ-c" target="_blank" rel="noopener noreferrer">inspired by one of my favorite movie scenes</a>) that imports from URL, photo, or PDF into a structured recipe via Claude — ingredients, instructions, and nutrition parsed straight into Airtable. <br><br>Also tracks pantry and freezer inventory by quantity and unit, with photo-based bulk entry and a "what can I make" matcher against what\'s actually in stock.<br><br>Most recently: a shopping list that combines recipes and sends an editable, checkbox-tracked list straight to Google Sheets, plus per-ingredient swap suggestions and recipe variants for dietary tweaks.',
     href: 'projects/recipe-box.html'
   },
   'golf-league': {
