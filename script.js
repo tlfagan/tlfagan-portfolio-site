@@ -74,7 +74,7 @@ const PROJECTS = {
   },
   'teamweaver': {
     title: 'TeamWeaver',
-    desc: 'A shared game-schedule hub for my kids and their cousins across four households, so nobody has to check four different TeamSnap apps to know where to be. <br><br>Every kid\'s TeamSnap feed syncs automatically overnight into one page — today\'s games, the week ahead, and everyone else\'s next game — filterable by kid or family, each with a real drive-time estimate from home and one-tap Apple Maps or Uber. <br><br>Built on the same lightweight Airtable + Vercel pattern as my other apps, behind a simple password gate everyone already has bookmarked.',
+    desc: 'A shared game-schedule hub for my kids and their cousins across five households, so nobody has to check five different TeamSnap apps to know where to be. <br><br>Every kid\'s TeamSnap feed syncs automatically overnight into one page — today\'s games, the week ahead, and everyone else\'s next game — filterable by kid or family, each with a real drive-time estimate from home and one-tap Apple Maps or Uber. <br><br>Built on the same lightweight Airtable + Vercel pattern as my other apps, behind a simple password gate everyone already has bookmarked.',
     href: 'projects/teamweaver.html'
   }
 };
@@ -133,40 +133,13 @@ document.getElementById('testimonial-next').addEventListener('click', () => {
   testimonialRow.scrollBy({ left: testimonialStep(), behavior: 'smooth' });
 });
 
-// ---------- generic text lightbox (bands) ----------
-function setupSimpleLightbox(lightboxEl) {
-  const closeBtn = lightboxEl.querySelector('.lightbox-close');
-  const backdrop = lightboxEl.querySelector('.lightbox-backdrop');
-  let trigger = null;
+// ---------- project strip carousel ----------
+const projectStrip = document.getElementById('project-strip');
+const projectStripStep = () => projectStrip.clientWidth * 0.6;
 
-  function open(triggerEl) {
-    trigger = triggerEl;
-    lightboxEl.hidden = false;
-    document.body.style.overflow = 'hidden';
-    closeBtn.focus();
-  }
-
-  function close() {
-    lightboxEl.hidden = true;
-    document.body.style.overflow = '';
-    if (trigger) trigger.focus();
-  }
-
-  backdrop.addEventListener('click', close);
-  closeBtn.addEventListener('click', close);
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !lightboxEl.hidden) close();
-  });
-
-  return { open, close };
-}
-
-const bandsLightbox = setupSimpleLightbox(document.getElementById('bands-lightbox'));
-const bandsTrigger = document.getElementById('bands-trigger');
-bandsTrigger.addEventListener('click', () => bandsLightbox.open(bandsTrigger));
-bandsTrigger.addEventListener('keydown', (e) => {
-  if (e.key === 'Enter' || e.key === ' ') {
-    e.preventDefault();
-    bandsLightbox.open(bandsTrigger);
-  }
+document.getElementById('project-prev').addEventListener('click', () => {
+  projectStrip.scrollBy({ left: -projectStripStep(), behavior: 'smooth' });
+});
+document.getElementById('project-next').addEventListener('click', () => {
+  projectStrip.scrollBy({ left: projectStripStep(), behavior: 'smooth' });
 });

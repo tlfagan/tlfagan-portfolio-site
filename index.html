@@ -36,15 +36,21 @@
   <section id="projects">
     <div class="section-heading">
       <p class="eyebrow">Work</p>
-      <p>Below are some recent projects. Click a thumbnail for details.</p>
+      <p>Below are some recent projects. Click a thumbnail for details — scroll or use the arrows to see more.</p>
     </div>
 
-    <div class="dotted-strip">
-      <div class="floating-card" data-slug="Home Assistant" role="button" tabindex="0" title="Home Assistant" aria-label="View Home Assistant project" style="--rot:-5deg; top:15px; left:2%;"><img src="assets/mockups/home_assistant_image.png" alt=""></div>
-      <div class="floating-card" data-slug="recipe-box" role="button" tabindex="0" title="What Don't You Want" aria-label="View What Don't You Want project" style="--rot:3deg; top:8px; left:42%;"><img src="assets/mockups/recipe-box-mockup.jpg" alt="" style="object-position: top;"></div>
-      <div class="floating-card" data-slug="golf-league" role="button" tabindex="0" title="Garden Golf League" aria-label="View Garden Golf League project" style="--rot:-4deg; top:222px; left:14%;"><img src="assets/mockups/golf-league-mockup.jpg" alt="" style="object-position: left top;"></div>
-      <div class="floating-card" data-slug="job-search-agent" role="button" tabindex="0" title="Job Search Agent &amp; Tracker" aria-label="View Job Search Agent &amp; Tracker project" style="--rot:4deg; top:212px; left:54%;"><img src="assets/mockups/job-search-agent-mockup.svg" alt=""></div>
-      <div class="floating-card" data-slug="teamweaver" role="button" tabindex="0" title="TeamWeaver" aria-label="View TeamWeaver project" style="--rot:-3deg; top:120px; left:48%;"><img src="assets/mockups/teamweaver-mockup.png" alt="" style="object-position: top;"></div>
+    <div class="project-carousel">
+      <button class="carousel-arrow" id="project-prev" aria-label="Scroll projects left">&#8249;</button>
+      <div class="dotted-strip" id="project-strip">
+        <div class="strip-track">
+          <div class="floating-card" data-slug="Home Assistant" role="button" tabindex="0" title="Home Assistant" aria-label="View Home Assistant project" style="--rot:-5deg; top:15px; left:20px;"><img src="assets/mockups/home_assistant_image.png" alt=""></div>
+          <div class="floating-card" data-slug="golf-league" role="button" tabindex="0" title="Garden Golf League" aria-label="View Garden Golf League project" style="--rot:-4deg; top:205px; left:150px;"><img src="assets/mockups/golf-league-mockup.jpg" alt="" style="object-position: left top;"></div>
+          <div class="floating-card" data-slug="recipe-box" role="button" tabindex="0" title="What Don't You Want" aria-label="View What Don't You Want project" style="--rot:3deg; top:8px; left:460px;"><img src="assets/mockups/recipe-box-mockup.jpg" alt="" style="object-position: top;"></div>
+          <div class="floating-card" data-slug="teamweaver" role="button" tabindex="0" title="TeamWeaver" aria-label="View TeamWeaver project" style="--rot:4deg; top:212px; left:590px;"><img src="assets/mockups/teamweaver-mockup.png" alt="" style="object-position: top;"></div>
+          <div class="floating-card" data-slug="job-search-agent" role="button" tabindex="0" title="Job Search Agent &amp; Tracker" aria-label="View Job Search Agent &amp; Tracker project" style="--rot:-3deg; top:130px; left:1150px;"><img src="assets/mockups/job-search-agent-mockup.svg" alt=""></div>
+        </div>
+      </div>
+      <button class="carousel-arrow" id="project-next" aria-label="Scroll projects right">&#8250;</button>
     </div>
   </section>
 
@@ -198,18 +204,6 @@
     <p class="eyebrow">Personal</p>
     <div class="personal-grid">
 
-      <div class="personal-card" id="bands-trigger" role="button" tabindex="0" aria-label="View Rocket Horse and Hell Creek details">
-        <div class="personal-media split-media">
-          <img class="split-a" src="assets/rocket.jpg" alt="Rocket Horse cover art">
-          <img class="split-b" src="assets/horse.jpg" alt="Hell Creek cover art">
-        </div>
-        <div class="personal-body">
-          <p class="personal-title">Music — Rocket Horse &amp; Hell Creek</p>
-          <p class="personal-status">On hiatus / constantly, slowly being unearthed</p>
-          <p class="personal-desc">Two digital music projects utilizing FL Studio, EZDrummer, Kontakt, instruments from Impact Soundworks, and lots of late nights with increasingly tired eyeballs. Collabs welcome.</p>
-        </div>
-      </div>
-
       <a class="personal-card" href="https://hereisthebeef.wordpress.com" target="_blank" rel="noopener">
         <div class="personal-media"><img src="assets/beef-hero.png" alt="Here's the Beef blog header illustration"></div>
         <div class="personal-body">
@@ -250,28 +244,6 @@
       <h3 id="lightbox-title" class="lightbox-title"></h3>
       <p class="lightbox-desc"></p>
       <a class="lightbox-link learn-more" href="">Learn more →</a>
-    </div>
-  </div>
-</div>
-
-<div id="bands-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-labelledby="bands-lightbox-title" hidden>
-  <div class="lightbox-backdrop"></div>
-  <div class="lightbox-content">
-    <button class="lightbox-close" aria-label="Close">&times;</button>
-    <div class="lightbox-body">
-      <h3 id="bands-lightbox-title" class="lightbox-title">Rocket Horse &amp; Hell Creek</h3>
-
-      <div class="band-entry">
-        <p class="band-name">Rocket Horse <span class="band-status">— On hiatus</span></p>
-        <p class="lightbox-desc">Thrashy, melodic metal about space exploration. Three tracks: "Maiden Ranger," "Radial Velocity," "Power Trip," up on Bandcamp. Quiet for now, but riffs are always coming.</p>
-        <a class="lightbox-link learn-more" href="https://rockethorse.bandcamp.com" target="_blank" rel="noopener">rockethorse.bandcamp.com →</a>
-      </div>
-
-      <div class="band-entry">
-        <p class="band-name">Hell Creek <span class="band-status">— Constantly, slowly being unearthed</span></p>
-        <p class="lightbox-desc">Sludgy heavy metal inspired by ancient fossils.</p>
-        <a class="lightbox-link learn-more" href="https://hellcreeklives.bandcamp.com" target="_blank" rel="noopener">hellcreeklives.bandcamp.com →</a>
-      </div>
     </div>
   </div>
 </div>
