@@ -124,7 +124,7 @@ h2 { font-size: 18px; font-weight: 500; margin: 0 0 12px; }
 }
 
 .dotted-strip {
-  height: 520px;
+  height: 420px;
   flex: 1;
   min-width: 0;
   border-radius: var(--radius);
@@ -139,14 +139,14 @@ h2 { font-size: 18px; font-weight: 500; margin: 0 0 12px; }
 .strip-track {
   position: relative;
   height: 100%;
-  width: 1700px;
+  width: 1130px;
   background-image: radial-gradient(var(--border) 1px, transparent 1px);
   background-size: 14px 14px;
 }
 
 .floating-card {
   position: absolute;
-  width: min(463px, 44%);
+  width: 320px;
   aspect-ratio: 380 / 250;
   background: var(--bg);
   border: 0.5px solid var(--border);
