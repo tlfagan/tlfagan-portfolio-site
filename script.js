@@ -71,6 +71,11 @@ const PROJECTS = {
     title: 'Task consolidation tool',
     desc: 'A Claude Code project using Google Sheets as a single source of truth to pull scattered tasks into one place, built as both a real workflow tool and a LinkedIn Learning course project.',
     href: 'projects/task-consolidator.html'
+  },
+  'teamweaver': {
+    title: 'TeamWeaver',
+    desc: 'A shared game-schedule hub for my kids and their cousins across four households, so nobody has to check four different TeamSnap apps to know where to be. <br><br>Every kid\'s TeamSnap feed syncs automatically overnight into one page — today\'s games, the week ahead, and everyone else\'s next game — filterable by kid or family, each with a real drive-time estimate from home and one-tap Apple Maps or Uber. <br><br>Built on the same lightweight Airtable + Vercel pattern as my other apps, behind a simple password gate everyone already has bookmarked.',
+    href: 'projects/teamweaver.html'
   }
 };
 

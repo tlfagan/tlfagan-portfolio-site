@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TeamWeaver — Tim Fagan</title>
+<link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+<link rel="stylesheet" href="../styles.css">
+<style>main{max-width:640px;}</style>
+</head>
+<body>
+<main style="margin:0 auto;padding:48px 24px;">
+  <a href="../index.html#projects" style="font-size:12px;color:var(--text-muted);text-decoration:none;">← Back to projects</a>
+  <h1 style="margin-top:24px;">TeamWeaver</h1>
+
+  <!-- TODO: drop a looping demo clip at ../assets/videos/teamweaver-demo.mp4 (and .webm if you have it),
+       then swap this img for:
+       <video class="project-video" autoplay muted loop playsinline poster="../assets/mockups/teamweaver-mockup.png">
+         <source src="../assets/videos/teamweaver-demo.webm" type="video/webm">
+         <source src="../assets/videos/teamweaver-demo.mp4" type="video/mp4">
+       </video> -->
+  <img class="project-video" src="../assets/mockups/teamweaver-mockup.png" alt="TeamWeaver schedule screen" style="object-fit:cover; object-position:top;">
+
+  <div class="project-stack">
+    <img src="../assets/icons/vercel.svg" alt="" title="Vercel">
+    <img src="../assets/icons/airtable.svg" alt="" title="Airtable">
+    <img src="../assets/icons/javascript.svg" alt="" title="JavaScript">
+  </div>
+
+  <div class="project-body">
+    <p>TeamWeaver pulls every grandkid's game schedule into one page. Four households, each running their own TeamSnap team app, used to mean checking four separate calendars just to know who's playing where and when — this weaves them into a single shared view everyone already has bookmarked.</p>
+    <p>The home screen leads with today's games, then the week ahead, then a quiet-week catch-all — "Everyone Else's Next Game" — so a kid with nothing on the calendar this week still shows up with whatever's next instead of disappearing entirely. Chips filter the whole view by kid or by family.</p>
+
+    <h3>Features in production</h3>
+    <p>Each game shows a live drive time and ETA computed from a home address via the Google Maps Distance Matrix API, plus one-tap buttons straight into Apple Maps or an Uber ride to the venue. A daily sync pulls every kid's TeamSnap <code>webcal://</code> feed automatically, classifies each item as a game or practice, and parses the opponent and home/away split out of the raw event text. A text-size toggle and a "What's New" changelog panel (tap the bell) keep it usable for grandparents, not just the parents who built it. A Full Schedule page lists everything synced, independent of the week window, so a stale or broken feed is easy to spot.</p>
+
+    <h3>Architecture</h3>
+    <p>No-build-step vanilla JS front end deployed on Vercel, matching the same lightweight pattern as the other apps in this set. Airtable holds Kids and Events; a Vercel cron job runs the sync once a day, normalizing each <code>webcal://</code> feed URL and deduping/updating records by ICS UID. The Google Maps Distance Matrix API supplies drive times. Auth is a custom login page backed by a SHA-256-hashed session cookie — the same pattern as Home Assistant — rather than the browser's native Basic Auth popup.</p>
+
+    <h3>Up next</h3>
+    <p>Deciding how a kid who plays for two different teams should be represented — right now the second team's games get folded into the first team's feed via a note rather than having their own field.</p>
+  </div>
+</main>
+</body>
+</html>
